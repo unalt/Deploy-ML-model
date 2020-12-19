@@ -29,6 +29,7 @@ def model_deploy():
         plasma_f = request.form.get('Plasma_F')
         HbA1c = request.form.get('HbA1c')
         fields = [age,bs_fast,bs_pp,plasma_r,plasma_f,HbA1c]
+        print(fields)
         if not None in fields:
             #Datapreprocessing Convert the values to float
             age = float(age)
